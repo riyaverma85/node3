@@ -39,6 +39,17 @@ const dataEdit=async(req,res)=>{
     console.log(empData)
     res.render("editdata",{Data:empData})
 }
+const editSave=async(req,res)=>{
+    const {name,sub,city,fees}=req.body;
+    await empModel.findByIdAndUpdate(id, {
+        name:name,
+        subject:sub,
+        city:city,
+        fees:fees
+    })
+    const empData= await empModel.find();
+    res.render("update",{Data:empData})
+}
 
 module.exports={
     homepage,
@@ -47,5 +58,6 @@ module.exports={
     empDisplay,
     updatepage,
     dataDelete,
-    dataEdit
+    dataEdit,
+    editSave
 }
