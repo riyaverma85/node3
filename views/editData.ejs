@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/style.css">
 </head>
-<body bgcolor="lightblue">
+<body>
     <div id="header">
     <a href="/">Home</a>
     <a href="/insert">Insert</a>
@@ -16,8 +16,8 @@
     <a href="/update">Update</a>
     <hr color="black" size="3">
     </div>
-    
-    <form action="/editsave" method="post">
+    <h2 class="h2">Edit the data</h2>
+    <form action="/editsave" method="post" id="form">
         <input type="hidden" name="id" value="<%= Data.id %>">
         Enter Name: <input type="text" value="<%= Data.name %>" name="name" ><br/><br/>
         Enter Subject: <input type="text" value="<%= Data.subject %>" name="sub" ><br/><br/>

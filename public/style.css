@@ -42,6 +42,7 @@
     height: 33px;
     border:  1px solid #ccc;
     border-radius: 5px;
+    padding: 0.3rem;
 }
 #form  button{
     padding: 0.4rem;
