@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightblue">
+    <div>
+    <a href="/">Home</a>
+    <a href="/insert">Insert</a>
+    <a href="/display">Display</a>
+    <a href="/update">Update</a>
+    <hr color="black" size="3">
+    </div>
+    
+    <form action="/editsave" method="post">
+        <input type="hidden" name="id" value="<%= Data.id %>">
+        Enter Name: <input type="text" name="name" value="<%= Data.name %>><br/><br/>
+        Enter Subject: <input type="text" name="sub" value="<%= Data.subject %>><br/><br/>
+        Enter City: <input type="text" name="city" value="<%= Data.city %>><br/><br/>
+        Enter Fees: <input type="text" name="fees" value="<%= Data.fees %>><br/><br/>
+        <button>Edit Save</button>
+    </form>
+    
+</body>
+</html>

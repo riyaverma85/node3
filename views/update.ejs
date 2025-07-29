@@ -16,7 +16,7 @@
     </div>
 <hr color="black" size="3">
    <h2>Data Update page!!!</h2>
-    <table border="1" width="300px" height="200px">
+    <table border="1" width="500px" height="300px">
         <tr>
             <th>Name</th>
             <th>Subject</th>
@@ -33,7 +33,10 @@
             <td> <%= key.city %></td>
             <td> <%= key.fees %></td>
             <td>
-                <a href="/deletedata/?id=<% key.id %>"></a>
+                <a href="/editdata/?id=<%= key.id %>"></a>
+            </td>
+            <td>
+                <a href="/datadelete/?id=<%= key.id %>">delete</a>
             </td>
         </tr>
       <% }) %>

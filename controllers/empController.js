@@ -32,7 +32,12 @@ const dataDelete=async(req,res)=>{
     await empModel.findByIdAndDelete(id);
     const empData=await empModel.find();
     res.render("update",{Data:empData})
-
+}
+const dataEdit=async(req,res)=>{
+    const {id}=req.query;
+    const empData=await empModel.findById(id);
+    console.log(empData)
+    res.render("editdata",{Data:empData})
 }
 
 module.exports={
@@ -40,5 +45,7 @@ module.exports={
     insertpage,
     empSave,
     empDisplay,
-    updatepage
+    updatepage,
+    dataDelete,
+    dataEdit
 }

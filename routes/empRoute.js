@@ -8,6 +8,7 @@ route.get("/insert", empControll.insertpage)
 route.post("/save", empControll.empSave)
 route.get("/display",empControll.empDisplay)
 route.get("/update",empControll.updatepage)
-    
+route.get("/datadelete",empControll.dataDelete)
+route.get("/editdata",empControll.dataEdit)
 
 module.exports=route;
