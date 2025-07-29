@@ -22,6 +22,8 @@
             <th>Subject</th>
             <th>City</th>
             <th>Fees</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
     
    <% Data.forEach((key)=>{ %>
@@ -30,6 +32,9 @@
             <td> <%= key.subject %></td>
             <td> <%= key.city %></td>
             <td> <%= key.fees %></td>
+            <td>
+                <a href="/deletedata/?id=<% key.id %>"></a>
+            </td>
         </tr>
       <% }) %>
 

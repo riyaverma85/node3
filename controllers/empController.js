@@ -27,7 +27,13 @@ const updatepage=async(req,res)=>{
     console.log(empData);
     res.render("update",{Data:empData})
 }
+const dataDelete=async(req,res)=>{
+    const {id}=req.query;
+    await empModel.findByIdAndDelete(id);
+    const empData=await empModel.find();
+    res.render("update",{Data:empData})
 
+}
 
 module.exports={
     homepage,
