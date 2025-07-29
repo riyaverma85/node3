@@ -60,3 +60,11 @@
     margin-left: 30%;
     background-color: aliceblue;
 }
+#tbl tr th{
+    background-color: black;
+    color: aliceblue;
+    height: 50px;
+}
+#tbl tr td{
+    text-align: center;
+}
