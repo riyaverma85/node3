@@ -40,7 +40,7 @@ const dataEdit=async(req,res)=>{
     res.render("editdata",{Data:empData})
 }
 const editSave=async(req,res)=>{
-    const {name,sub,city,fees}=req.body;
+    const {id,name,sub,city,fees}=req.body;
     await empModel.findByIdAndUpdate(id, {
         name:name,
         subject:sub,
