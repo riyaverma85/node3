@@ -17,9 +17,15 @@ const empSave=async(req,res)=>{
     console.log(req.body);
     res.render("insert")
 }
+const empDisplay=async(req,res)=>{
+    const empData=await empModel.find();
+    console.log(empData);
+    res.render("display",{Data:empData})
+}
 
 module.exports={
     homepage,
     insertpage,
-    empSave
+    empSave,
+    empDisplay
 }
