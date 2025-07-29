@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightblue">
+    <div>
+    <a href="/">Home</a>
+    <a href="/insert">Insert</a>
+    <a href="/display">Display</a>
+    <a href="/update">Update</a>
+    
+    </div>
+<hr color="black" size="3">
+   <h2>Data Update page!!!</h2>
+    <table border="1" width="300px" height="200px">
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>City</th>
+            <th>Fees</th>
+        </tr>
+    
+   <% Data.forEach((key)=>{ %>
+        <tr>
+            <td> <%= key.name %></td>
+            <td> <%= key.subject %></td>
+            <td> <%= key.city %></td>
+            <td> <%= key.fees %></td>
+        </tr>
+      <% }) %>
+
+    </table>
+
+</body>
+</html>

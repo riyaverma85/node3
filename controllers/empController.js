@@ -22,10 +22,17 @@ const empDisplay=async(req,res)=>{
     console.log(empData);
     res.render("display",{Data:empData})
 }
+const updatepage=async(req,res)=>{
+    const empData=await empModel.find();
+    console.log(empData);
+    res.render("update",{Data:empData})
+}
+
 
 module.exports={
     homepage,
     insertpage,
     empSave,
-    empDisplay
+    empDisplay,
+    updatepage
 }

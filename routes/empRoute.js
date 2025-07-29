@@ -7,6 +7,7 @@ route.get("/", empControll.homepage)
 route.get("/insert", empControll.insertpage)
 route.post("/save", empControll.empSave)
 route.get("/display",empControll.empDisplay)
+route.get("/update",empControll.updatepage)
     
 
 module.exports=route;
