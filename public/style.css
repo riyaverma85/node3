@@ -58,6 +58,9 @@
 #tbl{
     margin-top: 20px;
     margin-left: 30%;
+    border:1px solid #ccc;
+    width:500px;
+    height:200px;
     background-color: aliceblue;
 }
 #tbl tr th{
